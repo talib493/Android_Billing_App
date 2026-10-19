@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.BillingApp" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.AppSplashScreen" parent="Theme.SplashScreen">
+        <!-- Sets the background color of the splash screen -->
+        <item name="windowSplashScreenBackground">#FFFFFF</item> <!-- White, or any hex code -->
+
+        <!-- Sets your PNG logo as the center icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo_wrapper</item>
+
+        <!-- Sets how long the icon remains visible (Max 1000ms recommended) -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+
+        <!-- Post-splash theme: Automatically switches to your main app theme when ready -->
+        <item name="postSplashScreenTheme">@style/Theme.BillingApp</item>
+    </style>
+</resources>
